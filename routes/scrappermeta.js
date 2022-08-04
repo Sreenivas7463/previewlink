@@ -27,15 +27,15 @@ router.get('/:url', function(req, resp) {
         })
 
         console.debug(results)
-        resp.render('scrapeview', {title: "Scrape Metadata - Node.js", data: results}); 
-        fs.writeFile('./data.json', JSON.stringify(results), 'utf-8',
+       // resp.render('scrapeview', {title: "Scrape Metadata - Node.js", data: results}); 
+       // fs.writeFile('./data.json', JSON.stringify(results), 'utf-8',
         // callback function
-        function(err) {     
-            if (err) throw err;
+       // function(err) {     
+         //   if (err) throw err;
            
-            console.log("Data is stored to data.json successfully.");
+          //  console.log("Data is stored to data.json successfully.");
              
-        })
+       // })
     })
    
   }
