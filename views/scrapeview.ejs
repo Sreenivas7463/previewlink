@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+    <h1><a href="<%= data[0].url %>" target="_blank"><%- data[0].title %></a></h1><!-- == with html tags or  - for html tags avoid  -->
+    <figure >
+      <img src=<%= data[0].img %> />
+      <figcaption>
+        <%- data[0].description %>
+      </figcaption>
+    </figure>
+    
+  </body>
+</html>
