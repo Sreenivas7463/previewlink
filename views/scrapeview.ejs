@@ -5,12 +5,12 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    
-    <h1><a href="<%= data[0].url %>" target="_blank"><%- data[0].title %></a></h1><!-- == with html tags or  - for html tags avoid  -->
+     <%= data.length-1 %>
+    <h1><a href="<%= data[data.length-1].url %>" target="_blank"><%- data[data.length-1].title %></a></h1><!-- == with html tags or  - for html tags avoid  -->
     <figure >
-      <img src=<%= data[0].img %> />
+      <img src=<%= data[data.length-1].img %> />
       <figcaption>
-        <%- data[0].description %>
+        <%- data[data.length-1].description %>
       </figcaption>
     </figure>
     
