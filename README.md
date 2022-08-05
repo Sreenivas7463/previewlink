@@ -7,4 +7,4 @@
 
 ## Front End link:- https://codepen.io/sreenivascodepen/full/wvmjWPW
 
-# You can Paste Link in text field and click on Click tp Preview Button
+# You can Paste Link in text field and click on Click to Preview Button in Above Link
