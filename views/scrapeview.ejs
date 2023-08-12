@@ -13,6 +13,10 @@
         <%- data[data.length-1].description %>
       </figcaption>
     </figure>
-    
+    <% if(data[data.length-1].video) { %>
+     <video controls poster="<%= data[data.length-1].img %>">
+      <source src="<%= data[data.length-1].video %>" />
+    </video>
+    <% } %>
   </body>
 </html>
