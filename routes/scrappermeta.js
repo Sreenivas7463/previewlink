@@ -20,7 +20,7 @@ router.get('/:url', function(req, resp) {
         var $ = cheerio.load(res.body)
         var title = $('meta[property="og:title"]').attr('content')
         var img = $('meta[property="og:image"]').attr('content')
-        var imgt = $('meta[property="twitter:image"]').attr('content')
+        var imgt = $('meta[name="twitter:image"]').attr('content')
         var url = $('meta[property="og:url"]').attr('content')
         var desc = $('meta[property="og:description"]').attr('content')
        var vid = $('meta[property="og:video:secure_url"]').attr('content')
