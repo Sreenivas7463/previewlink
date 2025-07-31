@@ -25,9 +25,9 @@ router.get('/:url', function(req, resp) {
         var desc = $('meta[property="og:description"]').attr('content')
        var vid = $('meta[property="og:video:secure_url"]').attr('content')
 
-       var image = img ? img : imgt
+       
         results.push({
-            title: title, img: imgage, url: urlv, description: desc, video: vid
+            title: title, img: img, imgt: imgt, url: urlv, description: desc, video: vid
         })
 
         //console.debug(results)
